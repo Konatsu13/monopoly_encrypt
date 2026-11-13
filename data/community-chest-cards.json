@@ -1,0 +1,118 @@
+{
+  "deck": "communityChest",
+  "label": "ARSIP KOTA",
+  "cards": [
+    {
+      "id": "chest-01",
+      "deck": "communityChest",
+      "plaintext": "Maju ke Gerbang Kota dan terima gaji 200.",
+      "effect": { "type": "MOVE_TO", "spaceId": "space-00", "collectGo": true },
+      "retain": false
+    },
+    {
+      "id": "chest-02",
+      "deck": "communityChest",
+      "plaintext": "Kesalahan bank menguntungkan Anda. Terima 200.",
+      "effect": { "type": "COLLECT_BANK", "amount": 200 },
+      "retain": false
+    },
+    {
+      "id": "chest-03",
+      "deck": "communityChest",
+      "plaintext": "Bayar biaya dokter 50.",
+      "effect": { "type": "PAY_BANK", "amount": 50 },
+      "retain": false
+    },
+    {
+      "id": "chest-04",
+      "deck": "communityChest",
+      "plaintext": "Hasil penjualan saham. Terima 50.",
+      "effect": { "type": "COLLECT_BANK", "amount": 50 },
+      "retain": false
+    },
+    {
+      "id": "chest-05",
+      "deck": "communityChest",
+      "plaintext": "Simpan kartu ini untuk bebas dari Penjara.",
+      "effect": { "type": "GET_OUT_OF_JAIL" },
+      "retain": true
+    },
+    {
+      "id": "chest-06",
+      "deck": "communityChest",
+      "plaintext": "Masuk ke Penjara tanpa melewati Gerbang Kota.",
+      "effect": { "type": "GO_TO_JAIL" },
+      "retain": false
+    },
+    {
+      "id": "chest-07",
+      "deck": "communityChest",
+      "plaintext": "Dana liburan Anda matang. Terima 100.",
+      "effect": { "type": "COLLECT_BANK", "amount": 100 },
+      "retain": false
+    },
+    {
+      "id": "chest-08",
+      "deck": "communityChest",
+      "plaintext": "Pengembalian pajak penghasilan. Terima 20.",
+      "effect": { "type": "COLLECT_BANK", "amount": 20 },
+      "retain": false
+    },
+    {
+      "id": "chest-09",
+      "deck": "communityChest",
+      "plaintext": "Ini ulang tahun Anda. Terima 10 dari setiap pemain lain.",
+      "effect": { "type": "COLLECT_EACH", "amount": 10 },
+      "retain": false
+    },
+    {
+      "id": "chest-10",
+      "deck": "communityChest",
+      "plaintext": "Asuransi jiwa Anda matang. Terima 100.",
+      "effect": { "type": "COLLECT_BANK", "amount": 100 },
+      "retain": false
+    },
+    {
+      "id": "chest-11",
+      "deck": "communityChest",
+      "plaintext": "Bayar biaya rumah sakit 100.",
+      "effect": { "type": "PAY_BANK", "amount": 100 },
+      "retain": false
+    },
+    {
+      "id": "chest-12",
+      "deck": "communityChest",
+      "plaintext": "Bayar biaya sekolah 50.",
+      "effect": { "type": "PAY_BANK", "amount": 50 },
+      "retain": false
+    },
+    {
+      "id": "chest-13",
+      "deck": "communityChest",
+      "plaintext": "Terima honor konsultasi 25.",
+      "effect": { "type": "COLLECT_BANK", "amount": 25 },
+      "retain": false
+    },
+    {
+      "id": "chest-14",
+      "deck": "communityChest",
+      "plaintext": "Bayar perbaikan jalan 40 per rumah dan 115 per hotel.",
+      "effect": { "type": "REPAIR", "perHouse": 40, "perHotel": 115 },
+      "retain": false
+    },
+    {
+      "id": "chest-15",
+      "deck": "communityChest",
+      "plaintext": "Menang hadiah kedua kontes kota. Terima 10.",
+      "effect": { "type": "COLLECT_BANK", "amount": 10 },
+      "retain": false
+    },
+    {
+      "id": "chest-16",
+      "deck": "communityChest",
+      "plaintext": "Anda menerima warisan 100.",
+      "effect": { "type": "COLLECT_BANK", "amount": 100 },
+      "retain": false
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+/* ==========================================================================
+   Responsive adjustments
+   ========================================================================== */
+
+@media (max-width: 1500px) {
+  .game-layout {
+    grid-template-columns: minmax(200px, 226px) minmax(0, 1fr) minmax(290px, 340px);
+  }
+}
+
+@media (max-width: 1240px) {
+  .menu-shell {
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.85fr);
+    gap: 34px;
+  }
+  .setup-grid {
+    grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.8fr);
+  }
+  .game-layout {
+    grid-template-columns: minmax(190px, 210px) minmax(0, 1fr) minmax(280px, 320px);
+    gap: 12px;
+    padding: 12px;
+  }
+  .panel {
+    padding: 13px;
+  }
+}
+
+/* Tablet: single column, board first, then actions, then players/log. */
+@media (max-width: 1040px) {
+  .game-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "brand turn"
+      "actions actions";
+    gap: 8px 14px;
+    padding: 10px 14px;
+  }
+  .game-brand {
+    grid-area: brand;
+  }
+  .header-turn {
+    grid-area: turn;
+  }
+  .header-actions {
+    grid-area: actions;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .game-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "board"
+      "actions"
+      "players"
+      "log";
+  }
+  .board-area {
+    grid-area: board;
+  }
+  .side-panel {
+    grid-area: actions;
+    position: static;
+    max-height: none;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  .players-panel {
+    grid-area: players;
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+  .players-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .log-panel {
+    grid-area: log;
+    min-height: 0;
+  }
+  .log-list {
+    max-height: 240px;
+  }
+  .board-frame {
+    width: min(100%, 78vh, 860px);
+  }
+}
+
+@media (max-width: 860px) {
+  .menu-shell {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .menu-hero {
+    padding: 4px;
+  }
+  .hero-title {
+    font-size: clamp(3rem, 13vw, 6rem);
+  }
+  .menu-panel {
+    padding: 22px;
+  }
+  .setup-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .key-panel {
+    position: static;
+  }
+  .setup-head {
+    grid-template-columns: auto 1fr;
+  }
+  .setup-head #setup-story {
+    grid-column: 2;
+    justify-self: start;
+  }
+  .prologue-panel {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+  }
+  .prologue-mark {
+    width: 120px;
+    justify-self: start;
+  }
+  .side-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .trade-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
+  .screen {
+    padding: 14px;
+  }
+  #screen-menu {
+    padding: 18px 14px 30px;
+  }
+  .menu-facts {
+    gap: 10px 22px;
+  }
+  .hero-title {
+    font-size: clamp(2.8rem, 17vw, 4.6rem);
+  }
+  .menu-button {
+    grid-template-columns: 28px 1fr auto;
+    padding: 12px;
+  }
+  .prologue-head,
+  .prologue-foot {
+    flex-wrap: wrap;
+  }
+  .prologue-panel {
+    padding: 20px;
+  }
+  .setup-player-row {
+    grid-template-columns: 26px minmax(0, 1fr);
+    grid-template-areas:
+      "num name"
+      "token token"
+      "remove remove";
+  }
+  .setup-player-row .row-number {
+    grid-area: num;
+  }
+  .setup-player-row .field-name {
+    grid-area: name;
+  }
+  .setup-player-row .field-token {
+    grid-area: token;
+  }
+  .setup-player-row .row-remove {
+    grid-area: remove;
+    justify-self: end;
+  }
+  .game-header {
+    position: static;
+  }
+  .header-turn {
+    padding: 5px 10px;
+  }
+  .header-turn-label {
+    display: none;
+  }
+  .header-actions .btn {
+    flex: none;
+  }
+  .save-chip {
+    display: none;
+  }
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+  .modal {
+    max-height: 94vh;
+    border-radius: 18px 18px 0 0;
+  }
+  .modal-head,
+  .modal-body,
+  .modal-foot {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .dialog-actions .btn {
+    flex: 1 1 100%;
+  }
+  .btn-row .btn {
+    flex: 1 1 100%;
+  }
+  .toast-root {
+    right: 10px;
+    bottom: 10px;
+    width: calc(100vw - 20px);
+  }
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .auction-player {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .game-brand .game-sub {
+    display: none;
+  }
+  .setup-head {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .setup-head #setup-story {
+    grid-column: 1;
+  }
+  .header-turn {
+    justify-self: end;
+  }
+}
+
+/* Print: not a supported way to play, but keep a readable summary. */
+@media print {
+  body {
+    background: #fff;
+    color: #111;
+  }
+  .game-header,
+  .side-panel,
+  .players-panel,
+  .toast-root,
+  .modal-overlay,
+  .board-caption {
+    display: none !important;
+  }
+  .board-frame {
+    width: 100%;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "deck": "chance",
+  "label": "SINYAL KESEMPATAN",
+  "cards": [
+    {
+      "id": "chance-01",
+      "deck": "chance",
+      "plaintext": "Maju ke Gerbang Kota dan terima gaji 200.",
+      "effect": { "type": "MOVE_TO", "spaceId": "space-00", "collectGo": true },
+      "retain": false
+    },
+    {
+      "id": "chance-02",
+      "deck": "chance",
+      "plaintext": "Maju ke Boulevard Pixel. Jika melewati Gerbang Kota, terima 200.",
+      "effect": { "type": "MOVE_TO", "spaceId": "space-24", "collectGo": true },
+      "retain": false
+    },
+    {
+      "id": "chance-03",
+      "deck": "chance",
+      "plaintext": "Maju ke utilitas terdekat. Bayar 10 kali total dadu kepada pemiliknya.",
+      "effect": { "type": "MOVE_TO_NEAREST", "kind": "UTILITY", "rentMultiplier": 10 },
+      "retain": false
+    },
+    {
+      "id": "chance-04",
+      "deck": "chance",
+      "plaintext": "Maju ke stasiun terdekat. Bayar sewa dua kali lipat kepada pemiliknya.",
+      "effect": { "type": "MOVE_TO_NEAREST", "kind": "RAILROAD", "rentMultiplier": 2 },
+      "retain": false
+    },
+    {
+      "id": "chance-05",
+      "deck": "chance",
+      "plaintext": "Bank membayar dividen 50 kepada Anda.",
+      "effect": { "type": "COLLECT_BANK", "amount": 50 },
+      "retain": false
+    },
+    {
+      "id": "chance-06",
+      "deck": "chance",
+      "plaintext": "Simpan kartu ini untuk bebas dari Penjara.",
+      "effect": { "type": "GET_OUT_OF_JAIL" },
+      "retain": true
+    },
+    {
+      "id": "chance-07",
+      "deck": "chance",
+      "plaintext": "Mundur tiga petak lalu selesaikan petak itu.",
+      "effect": { "type": "MOVE_RELATIVE", "steps": -3 },
+      "retain": false
+    },
+    {
+      "id": "chance-08",
+      "deck": "chance",
+      "plaintext": "Masuk ke Penjara tanpa melewati Gerbang Kota.",
+      "effect": { "type": "GO_TO_JAIL" },
+      "retain": false
+    },
+    {
+      "id": "chance-09",
+      "deck": "chance",
+      "plaintext": "Bayar perbaikan umum 25 per rumah dan 100 per hotel.",
+      "effect": { "type": "REPAIR", "perHouse": 25, "perHotel": 100 },
+      "retain": false
+    },
+    {
+      "id": "chance-10",
+      "deck": "chance",
+      "plaintext": "Bayar denda kecepatan 15.",
+      "effect": { "type": "PAY_BANK", "amount": 15 },
+      "retain": false
+    },
+    {
+      "id": "chance-11",
+      "deck": "chance",
+      "plaintext": "Naik ke Stasiun Utara. Jika melewati Gerbang Kota, terima 200.",
+      "effect": { "type": "MOVE_TO", "spaceId": "space-05", "collectGo": true },
+      "retain": false
+    },
+    {
+      "id": "chance-12",
+      "deck": "chance",
+      "plaintext": "Maju ke Puncak Cryptonia.",
+      "effect": { "type": "MOVE_TO", "spaceId": "space-39", "collectGo": true },
+      "retain": false
+    },
+    {
+      "id": "chance-13",
+      "deck": "chance",
+      "plaintext": "Anda terpilih sebagai ketua arsip. Bayar 50 kepada setiap pemain lain.",
+      "effect": { "type": "PAY_EACH", "amount": 50 },
+      "retain": false
+    },
+    {
+      "id": "chance-14",
+      "deck": "chance",
+      "plaintext": "Pinjaman pembangunan Anda cair. Terima 150.",
+      "effect": { "type": "COLLECT_BANK", "amount": 150 },
+      "retain": false
+    },
+    {
+      "id": "chance-15",
+      "deck": "chance",
+      "plaintext": "Maju ke stasiun terdekat. Bayar sewa dua kali lipat kepada pemiliknya.",
+      "effect": { "type": "MOVE_TO_NEAREST", "kind": "RAILROAD", "rentMultiplier": 2 },
+      "retain": false
+    },
+    {
+      "id": "chance-16",
+      "deck": "chance",
+      "plaintext": "Bayar pajak jalan 15.",
+      "effect": { "type": "PAY_BANK", "amount": 15 },
+      "retain": false
+    }
+  ]
+}

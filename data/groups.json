@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "COKLAT": { "label": "Coklat", "color": "#8b5a3c", "textColor": "#ffffff" },
+    "BIRU_MUDA": { "label": "Biru Muda", "color": "#8fd8ef", "textColor": "#102028" },
+    "PINK": { "label": "Pink", "color": "#e87fb3", "textColor": "#2a1020" },
+    "ORANGE": { "label": "Oranye", "color": "#f2a33c", "textColor": "#2a1808" },
+    "MERAH": { "label": "Merah", "color": "#e35d5d", "textColor": "#ffffff" },
+    "KUNING": { "label": "Kuning", "color": "#e7d24b", "textColor": "#242008" },
+    "HIJAU": { "label": "Hijau", "color": "#54b87a", "textColor": "#08200f" },
+    "BIRU_TUA": { "label": "Biru Tua", "color": "#4f6fe0", "textColor": "#ffffff" },
+    "STASIUN": { "label": "Stasiun", "color": "#c9d6e8", "textColor": "#101820" },
+    "UTILITAS": { "label": "Utilitas", "color": "#8ce0d4", "textColor": "#08201c" }
+  }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#070b14" />
+    <meta
+      name="description"
+      content="THE LOST CIPHER — Monopoli lokal Cryptonia dengan sandi komposisi fungsi. Proyek matematika kelas XI."
+    />
+    <title>THE LOST CIPHER — Encrypted Monopoly</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/board.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
+    <div id="app" aria-live="off">
+      <section id="screen-loading" class="screen screen-centered" aria-labelledby="loading-title">
+        <div class="loading-card">
+          <div class="loading-sigil" aria-hidden="true"></div>
+          <p class="eyebrow">CRYPTONIA / ARSIP 2099</p>
+          <h1 id="loading-title" class="display-title">THE LOST CIPHER</h1>
+          <p class="muted">Memuat arsip kota dan memvalidasi kunci sandi…</p>
+          <div class="loading-bar" role="progressbar" aria-label="Memuat data"><span></span></div>
+          <p id="loading-detail" class="tiny muted"></p>
+        </div>
+      </section>
+
+      <section id="screen-fatal" class="screen screen-centered" hidden aria-labelledby="fatal-title">
+        <div class="fatal-card">
+          <p class="eyebrow danger-text">ARSIP TIDAK DAPAT DIBUKA</p>
+          <h1 id="fatal-title">Data permainan tidak valid</h1>
+          <p class="muted">
+            Permainan tidak dimulai karena data wajib tidak lengkap atau kunci sandi tidak reversibel.
+            Perbaiki berkas data lalu muat ulang halaman.
+          </p>
+          <pre id="fatal-detail" class="fatal-detail" tabindex="0"></pre>
+          <button id="fatal-reload" class="btn btn-primary" type="button">Muat Ulang</button>
+        </div>
+      </section>
+
+      <section id="screen-menu" class="screen" hidden aria-labelledby="menu-title">
+        <div class="menu-shell">
+          <header class="menu-hero">
+            <div class="menu-hero-top">
+              <span class="sigil" aria-hidden="true"></span>
+              <p class="eyebrow">CRYPTONIA / ARSIP 2099</p>
+            </div>
+            <h1 id="menu-title" class="hero-title">THE<br />LOST<br /><span>CIPHER</span></h1>
+            <p class="hero-tagline" id="menu-tagline"></p>
+            <div class="cipher-ribbon" aria-hidden="true">
+              <span>08 13 15 06</span><i>/</i><span>05 17 04 11</span><i>/</i><span>19 02 24 09</span>
+            </div>
+            <dl class="menu-facts">
+              <div><dt>Tahun</dt><dd id="menu-year">2099</dd></div>
+              <div><dt>Kota</dt><dd id="menu-city">Cryptonia</dd></div>
+              <div><dt>Pemain</dt><dd>2–8 lokal</dd></div>
+            </dl>
+          </header>
+
+          <div class="menu-panel">
+            <p class="panel-kicker">GERBANG ARSIP</p>
+            <h2 class="panel-title">Pilih jalur masuk</h2>
+            <nav id="menu-actions" class="menu-actions" aria-label="Menu utama"></nav>
+            <p id="menu-save-status" class="menu-save-status tiny" role="status"></p>
+            <p class="menu-footer" id="menu-footer"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-prologue" class="screen" hidden aria-labelledby="prologue-title">
+        <div class="prologue-shell">
+          <header class="prologue-head">
+            <p class="eyebrow" id="prologue-kicker">ARSIP KOTA / TAHUN 2099</p>
+            <button id="prologue-skip" class="btn btn-ghost btn-small" type="button">Lewati prolog</button>
+          </header>
+          <div class="prologue-panel" id="prologue-panel">
+            <div class="prologue-mark" aria-hidden="true"></div>
+            <div class="prologue-copy">
+              <p class="slide-count" id="prologue-count"></p>
+              <h1 id="prologue-title" class="display-title"></h1>
+              <div id="prologue-body" class="prologue-body"></div>
+            </div>
+          </div>
+          <footer class="prologue-foot">
+            <div id="prologue-dots" class="progress-dots" aria-label="Progres prolog"></div>
+            <div class="prologue-buttons">
+              <button id="prologue-back" class="btn btn-secondary" type="button">Kembali</button>
+              <button id="prologue-next" class="btn btn-primary" type="button">Lanjut</button>
+            </div>
+          </footer>
+        </div>
+      </section>
+
+      <section id="screen-setup" class="screen" hidden aria-labelledby="setup-title">
+        <div class="setup-shell">
+          <header class="setup-head">
+            <button id="setup-back" class="btn btn-ghost btn-small" type="button">← Menu</button>
+            <div>
+              <p class="eyebrow">REGISTRASI INVESTOR</p>
+              <h1 id="setup-title" class="page-title">Daftarkan investor</h1>
+              <p id="setup-intro" class="muted"></p>
+            </div>
+            <button id="setup-story" class="btn btn-secondary btn-small" type="button">Lihat prolog</button>
+          </header>
+
+          <div class="setup-grid">
+            <div class="setup-main">
+              <section class="panel" aria-labelledby="setup-players-title">
+                <div class="panel-head">
+                  <h2 id="setup-players-title">Investor</h2>
+                  <span id="setup-count" class="badge">2 / 8</span>
+                </div>
+                <div id="setup-players" class="setup-players"></div>
+                <div class="setup-player-actions">
+                  <button id="setup-add" class="btn btn-secondary" type="button">Tambah Investor</button>
+                  <button id="setup-remove" class="btn btn-ghost" type="button">Hapus Investor Terakhir</button>
+                </div>
+                <p id="setup-error" class="form-error" role="alert" hidden></p>
+                <p id="setup-flavor" class="flavor-line"></p>
+                <button id="setup-start" class="btn btn-primary btn-large" type="button">Mulai Permainan</button>
+              </section>
+
+              <section class="panel" aria-labelledby="setup-profile-title">
+                <div class="panel-head">
+                  <h2 id="setup-profile-title">Profil edisi</h2>
+                  <span class="badge badge-warn">PROVISIONAL</span>
+                </div>
+                <p id="setup-profile-label" class="strong"></p>
+                <p id="setup-profile-source" class="tiny muted"></p>
+                <dl id="setup-profile-facts" class="stat-grid"></dl>
+              </section>
+            </div>
+
+            <aside class="setup-side">
+              <section class="panel key-panel" aria-labelledby="setup-key-title">
+                <div class="panel-head">
+                  <h2 id="setup-key-title">Kunci sandi</h2>
+                  <span id="setup-key-mode" class="badge"></span>
+                </div>
+                <p id="setup-key-id" class="tiny muted"></p>
+                <div id="setup-formulas" class="formula-list"></div>
+                <div id="setup-worked" class="worked-example"></div>
+                <div id="setup-key-warning" class="warning-box" hidden>
+                  <strong>Kunci pengembangan</strong>
+                  <p id="setup-key-warning-text"></p>
+                  <label class="check-row">
+                    <input id="setup-demo" type="checkbox" />
+                    <span>Aktifkan mode pengembangan</span>
+                  </label>
+                  <label class="check-row">
+                    <input id="setup-ack" type="checkbox" />
+                    <span id="setup-ack-text">Saya memahami bahwa kunci ini adalah kunci demo/pengembangan.</span>
+                  </label>
+                </div>
+                <p class="tiny muted">
+                  Kunci ini untuk pembelajaran komposisi &amp; invers fungsi, bukan untuk keamanan data nyata.
+                </p>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-game" class="screen game-screen" hidden aria-labelledby="game-title">
+        <header class="game-header">
+          <div class="game-brand">
+            <span class="sigil sigil-small" aria-hidden="true"></span>
+            <div>
+              <p class="game-logo" id="game-title">THE LOST CIPHER</p>
+              <p class="game-sub">CRYPTONIA 2099 · <span id="header-key">KUNCI</span></p>
+            </div>
+          </div>
+          <div class="header-turn" aria-live="polite">
+            <span class="header-turn-label">GILIRAN</span>
+            <strong id="header-player">—</strong>
+            <span id="header-turn-number" class="tiny muted"></span>
+          </div>
+          <div class="header-actions">
+            <span id="header-save" class="save-chip" role="status">Belum disimpan</span>
+            <button id="header-help" class="btn btn-ghost btn-small" type="button">Cara Bermain</button>
+            <button id="header-guide" class="btn btn-ghost btn-small" type="button">Panduan Sandi</button>
+            <button id="header-settings" class="btn btn-ghost btn-small" type="button">Pengaturan</button>
+            <button id="header-menu" class="btn btn-secondary btn-small" type="button">Menu</button>
+          </div>
+        </header>
+
+        <main id="main-content" class="game-layout">
+          <aside class="players-panel" aria-labelledby="players-title">
+            <div class="side-head">
+              <h2 id="players-title">Investor</h2>
+              <span id="players-bank" class="tiny muted"></span>
+            </div>
+            <div id="players-list" class="players-list"></div>
+            <div id="players-bank-supply" class="bank-supply"></div>
+          </aside>
+
+          <section class="board-area" aria-label="Papan permainan">
+            <div id="board-root" class="board-root"></div>
+            <p class="board-caption tiny muted">
+              Semua nama petak ditampilkan sebagai sandi angka. Klik petak untuk memeriksa nilai dan statusnya.
+            </p>
+          </section>
+
+          <aside class="side-panel">
+            <section id="action-panel" class="panel action-panel" aria-labelledby="action-title">
+              <div class="panel-head">
+                <h2 id="action-title">Tindakan</h2>
+                <span id="action-phase" class="badge">—</span>
+              </div>
+              <div id="action-body"></div>
+            </section>
+
+            <section class="panel log-panel" aria-labelledby="log-title">
+              <div class="panel-head">
+                <h2 id="log-title">Catatan Kota</h2>
+                <span id="log-count" class="tiny muted"></span>
+              </div>
+              <ol id="log-list" class="log-list" reversed></ol>
+            </section>
+          </aside>
+        </main>
+      </section>
+    </div>
+
+    <div id="modal-root"></div>
+    <div id="toast-root" class="toast-root" aria-live="polite" aria-atomic="false"></div>
+
+    <noscript>
+      <p style="padding: 2rem; color: #fff">
+        Permainan ini membutuhkan JavaScript. Aktifkan JavaScript lalu muat ulang halaman.
+      </p>
+    </noscript>
+
+    <script>
+      // Fail-safe for the loading screen. ES modules and fetch need an HTTP
+      // server; opening index.html directly would otherwise leave the spinner
+      // running forever with no explanation.
+      (function () {
+        function showBootFailure(message) {
+          if (window.__lostCipherApp) return;
+          var loading = document.getElementById('screen-loading');
+          var fatal = document.getElementById('screen-fatal');
+          if (!loading || !fatal || loading.hidden) return;
+          loading.hidden = true;
+          fatal.hidden = false;
+          var detail = document.getElementById('fatal-detail');
+          if (detail) detail.textContent = message;
+        }
+
+        window.__lostCipherBootFailure = showBootFailure;
+
+        window.addEventListener('error', function (event) {
+          if (window.__lostCipherApp) return;
+          showBootFailure(
+            'Modul aplikasi gagal dimuat.\n' +
+              (event.message || 'Kesalahan tidak diketahui.') +
+              '\n\nJalankan lewat server lokal: npm start, lalu buka http://localhost:5173'
+          );
+        });
+
+        window.addEventListener('unhandledrejection', function (event) {
+          if (window.__lostCipherApp) return;
+          var reason = event.reason && event.reason.message ? event.reason.message : event.reason;
+          showBootFailure(
+            'Data aplikasi gagal dimuat.\n' +
+              (reason || 'Kesalahan tidak diketahui.') +
+              '\n\nJalankan lewat server lokal: npm start, lalu buka http://localhost:5173'
+          );
+        });
+
+        setTimeout(function () {
+          if (window.__lostCipherApp) return;
+          showBootFailure(
+            'Aplikasi tidak selesai dimuat.\n\n' +
+              'Jangan membuka index.html langsung dari file explorer. Jalankan:\n' +
+              '  npm start\n' +
+              'lalu buka http://localhost:5173'
+          );
+        }, 8000);
+      })();
+    </script>
+    <script
+      type="module"
+      src="src/main.js"
+      onerror="window.__lostCipherBootFailure && window.__lostCipherBootFailure('Modul src/main.js tidak dapat dimuat. Jalankan lewat server lokal: npm start, lalu buka http://localhost:5173')"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "prop-01": { "id": "prop-01", "spaceId": "space-01", "kind": "STREET", "group": "COKLAT", "price": 60, "rent": [2, 10, 30, 90, 160, 250], "houseCost": 50, "mortgageValue": 30 },
+    "prop-03": { "id": "prop-03", "spaceId": "space-03", "kind": "STREET", "group": "COKLAT", "price": 60, "rent": [4, 20, 60, 180, 320, 450], "houseCost": 50, "mortgageValue": 30 },
+    "prop-05": { "id": "prop-05", "spaceId": "space-05", "kind": "RAILROAD", "group": "STASIUN", "price": 200, "mortgageValue": 100 },
+    "prop-06": { "id": "prop-06", "spaceId": "space-06", "kind": "STREET", "group": "BIRU_MUDA", "price": 100, "rent": [6, 30, 90, 270, 400, 550], "houseCost": 50, "mortgageValue": 50 },
+    "prop-08": { "id": "prop-08", "spaceId": "space-08", "kind": "STREET", "group": "BIRU_MUDA", "price": 100, "rent": [6, 30, 90, 270, 400, 550], "houseCost": 50, "mortgageValue": 50 },
+    "prop-09": { "id": "prop-09", "spaceId": "space-09", "kind": "STREET", "group": "BIRU_MUDA", "price": 120, "rent": [8, 40, 100, 300, 450, 600], "houseCost": 50, "mortgageValue": 60 },
+    "prop-11": { "id": "prop-11", "spaceId": "space-11", "kind": "STREET", "group": "PINK", "price": 140, "rent": [10, 50, 150, 450, 625, 750], "houseCost": 100, "mortgageValue": 70 },
+    "prop-12": { "id": "prop-12", "spaceId": "space-12", "kind": "UTILITY", "group": "UTILITAS", "price": 150, "mortgageValue": 75 },
+    "prop-13": { "id": "prop-13", "spaceId": "space-13", "kind": "STREET", "group": "PINK", "price": 140, "rent": [10, 50, 150, 450, 625, 750], "houseCost": 100, "mortgageValue": 70 },
+    "prop-14": { "id": "prop-14", "spaceId": "space-14", "kind": "STREET", "group": "PINK", "price": 160, "rent": [12, 60, 180, 500, 700, 900], "houseCost": 100, "mortgageValue": 80 },
+    "prop-15": { "id": "prop-15", "spaceId": "space-15", "kind": "RAILROAD", "group": "STASIUN", "price": 200, "mortgageValue": 100 },
+    "prop-16": { "id": "prop-16", "spaceId": "space-16", "kind": "STREET", "group": "ORANGE", "price": 180, "rent": [14, 70, 200, 550, 750, 950], "houseCost": 100, "mortgageValue": 90 },
+    "prop-18": { "id": "prop-18", "spaceId": "space-18", "kind": "STREET", "group": "ORANGE", "price": 180, "rent": [14, 70, 200, 550, 750, 950], "houseCost": 100, "mortgageValue": 90 },
+    "prop-19": { "id": "prop-19", "spaceId": "space-19", "kind": "STREET", "group": "ORANGE", "price": 200, "rent": [16, 80, 220, 600, 800, 1000], "houseCost": 100, "mortgageValue": 100 },
+    "prop-21": { "id": "prop-21", "spaceId": "space-21", "kind": "STREET", "group": "MERAH", "price": 220, "rent": [18, 90, 250, 700, 875, 1050], "houseCost": 150, "mortgageValue": 110 },
+    "prop-23": { "id": "prop-23", "spaceId": "space-23", "kind": "STREET", "group": "MERAH", "price": 220, "rent": [18, 90, 250, 700, 875, 1050], "houseCost": 150, "mortgageValue": 110 },
+    "prop-24": { "id": "prop-24", "spaceId": "space-24", "kind": "STREET", "group": "MERAH", "price": 240, "rent": [20, 100, 300, 750, 925, 1100], "houseCost": 150, "mortgageValue": 120 },
+    "prop-25": { "id": "prop-25", "spaceId": "space-25", "kind": "RAILROAD", "group": "STASIUN", "price": 200, "mortgageValue": 100 },
+    "prop-26": { "id": "prop-26", "spaceId": "space-26", "kind": "STREET", "group": "KUNING", "price": 260, "rent": [22, 110, 330, 800, 975, 1150], "houseCost": 150, "mortgageValue": 130 },
+    "prop-27": { "id": "prop-27", "spaceId": "space-27", "kind": "STREET", "group": "KUNING", "price": 260, "rent": [22, 110, 330, 800, 975, 1150], "houseCost": 150, "mortgageValue": 130 },
+    "prop-28": { "id": "prop-28", "spaceId": "space-28", "kind": "UTILITY", "group": "UTILITAS", "price": 150, "mortgageValue": 75 },
+    "prop-29": { "id": "prop-29", "spaceId": "space-29", "kind": "STREET", "group": "KUNING", "price": 280, "rent": [24, 120, 360, 850, 1025, 1200], "houseCost": 150, "mortgageValue": 140 },
+    "prop-31": { "id": "prop-31", "spaceId": "space-31", "kind": "STREET", "group": "HIJAU", "price": 300, "rent": [26, 130, 390, 900, 1100, 1275], "houseCost": 200, "mortgageValue": 150 },
+    "prop-32": { "id": "prop-32", "spaceId": "space-32", "kind": "STREET", "group": "HIJAU", "price": 300, "rent": [26, 130, 390, 900, 1100, 1275], "houseCost": 200, "mortgageValue": 150 },
+    "prop-34": { "id": "prop-34", "spaceId": "space-34", "kind": "STREET", "group": "HIJAU", "price": 320, "rent": [28, 150, 450, 1000, 1200, 1400], "houseCost": 200, "mortgageValue": 160 },
+    "prop-35": { "id": "prop-35", "spaceId": "space-35", "kind": "RAILROAD", "group": "STASIUN", "price": 200, "mortgageValue": 100 },
+    "prop-37": { "id": "prop-37", "spaceId": "space-37", "kind": "STREET", "group": "BIRU_TUA", "price": 350, "rent": [35, 175, 500, 1100, 1300, 1500], "houseCost": 200, "mortgageValue": 175 },
+    "prop-39": { "id": "prop-39", "spaceId": "space-39", "kind": "STREET", "group": "BIRU_TUA", "price": 400, "rent": [50, 200, 600, 1400, 1700, 2000], "houseCost": 200, "mortgageValue": 200 }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "classic-configurable",
+  "label": "Profil Klasik Configurable (data pengembangan)",
+  "sourceEdition": "Provisional: nilai papan klasik standar 40 petak, nama wilayah orisinal Cryptonia.",
+  "currency": "CR",
+  "startingCash": 1500,
+  "goSalary": 200,
+  "goSalaryOnLanding": true,
+  "jailFine": 50,
+  "jailMaxTurns": 3,
+  "jailPosition": 10,
+  "goToJailPosition": 10,
+  "auctionEnabled": true,
+  "auctionMinIncrement": 10,
+  "auctionStartBid": 0,
+  "freeParkingJackpot": false,
+  "mortgageInterestRate": 0.1,
+  "houseSupply": 32,
+  "hotelSupply": 12,
+  "maxHousesPerProperty": 4,
+  "hotelSellReturnsHouses": true,
+  "railroadRent": [25, 50, 100, 200],
+  "utilityRentMultiplier": [4, 10],
+  "endCondition": "LAST_SOLVENT",
+  "tradeEnabled": true,
+  "buildingEnabled": true,
+  "incomeTaxFlat": 200,
+  "notes": [
+    "Semua nilai dapat diedit tanpa mengubah mesin permainan.",
+    "Profil ini adalah baseline pengembangan, bukan klaim data resmi suatu edisi fisik.",
+    "Lihat OPEN_QUESTIONS.md untuk daftar nilai yang belum diverifikasi."
+  ]
+}

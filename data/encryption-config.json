@@ -1,0 +1,14 @@
+{
+  "alphabet": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "modulus": 26,
+  "mapping": "A_TO_0",
+  "functionF": { "type": "AFFINE", "a": 5, "b": 8 },
+  "functionG": { "type": "AFFINE", "a": 7, "b": 3 },
+  "compositionOrder": "G_AFTER_F",
+  "displayOffset": 1,
+  "wordSeparator": "/",
+  "approved": false,
+  "mode": "DEVELOPMENT",
+  "keyId": "dev-key-01",
+  "note": "Kunci contoh pengembangan. Belum disetujui guru. Ganti a, b, c, d dan set approved=true setelah disepakati."
+}

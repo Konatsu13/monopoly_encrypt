@@ -1,0 +1,127 @@
+{
+  "title": "THE LOST CIPHER",
+  "year": "2099",
+  "tagline": "Setiap wilayah menyimpan kode. Setiap keputusan membangun kekuasaan.",
+  "city": "Cryptonia",
+  "prologue": {
+    "kicker": "ARSIP KOTA / TAHUN 2099",
+    "slides": [
+      {
+        "title": "Cryptonia, 2099",
+        "paragraphs": [
+          "Cryptonia adalah kota perdagangan dan pusat kepemilikan aset terpenting di dunia. Menara-menara arsip menyimpan setiap nama wilayah, dokumen kepemilikan, dan pesan kota.",
+          "Untuk menjaga catatan itu, seluruh teks penting disimpan sebagai rangkaian angka yang dihasilkan dari komposisi dua fungsi."
+        ]
+      },
+      {
+        "title": "Kunci yang Hilang",
+        "paragraphs": [
+          "Suatu malam, kunci arsip utama menghilang. Catatan kota tidak rusak, tetapi kini hanya terbaca oleh mereka yang memahami fungsi invers.",
+          "Sebagai investor yang baru memperoleh izin masuk, Anda harus membaca sinyal dan arsip dengan matematika sebelum dapat mengambil keputusan."
+        ]
+      },
+      {
+        "title": "Pasar Properti Dibuka",
+        "paragraphs": [
+          "Pasar properti Cryptonia dibuka kembali. Beli wilayah, kelola uang, dan bertahanlah sebagai investor terakhir yang masih mampu memenuhi kewajiban.",
+          "Tidak ada misi rahasia. Hanya satu papan, satu kunci, dan keputusan-keputusan Anda."
+        ]
+      }
+    ],
+    "startLabel": "Mulai",
+    "skipLabel": "Lewati prolog",
+    "nextLabel": "Lanjut",
+    "backLabel": "Kembali"
+  },
+  "menu": {
+    "eyebrow": "CRYPTONIA / ARSIP 2099",
+    "subtitle": "Monopoli lokal dengan sandi komposisi fungsi.",
+    "newGame": "Mulai Baru",
+    "continueGame": "Lanjutkan Permainan",
+    "story": "Cerita: The Lost Cipher",
+    "howToPlay": "Cara Bermain",
+    "encryptionGuide": "Panduan Enkripsi & Dekripsi",
+    "settings": "Pengaturan",
+    "footer": "Proyek matematika kelas XI — komposisi dan invers fungsi. Kunci pengembangan, bukan keamanan data nyata."
+  },
+  "setup": {
+    "heading": "Registrasi Investor",
+    "intro": "Daftarkan 2–8 investor. Setiap investor memilih nama dan token unik sebelum memasuki pasar properti Cryptonia.",
+    "nameLabel": "Nama investor",
+    "tokenLabel": "Token",
+    "addPlayer": "Tambah Investor",
+    "removePlayer": "Hapus",
+    "startGame": "Mulai Permainan",
+    "profileLabel": "Profil edisi",
+    "keyLabel": "Kunci sandi",
+    "developmentWarning": "Kunci sandi ini berstatus PENGEMBANGAN dan belum disetujui guru. Aktifkan mode demo dan centang pernyataan untuk melanjutkan.",
+    "developmentConfirm": "Saya memahami bahwa kunci ini adalah kunci demo/pengembangan.",
+    "demoLabel": "Aktifkan mode pengembangan",
+    "invalidNames": "Semua investor harus memiliki nama.",
+    "duplicateNames": "Nama investor tidak boleh sama.",
+    "duplicateTokens": "Setiap investor harus memakai token yang berbeda.",
+    "invalidToken": "Pilih token untuk setiap investor.",
+    "playerCount": "Jumlah investor"
+  },
+  "gameIntro": {
+    "title": "Pasar Cryptonia Dibuka",
+    "text": "Anda kini berada di pasar properti Cryptonia. Seluruh nama wilayah dan isi kartu ditampilkan sebagai angka terenkripsi. Gunakan panduan fungsi invers untuk membacanya.",
+    "dismiss": "Masuk ke Papan"
+  },
+  "decks": {
+    "chance": {
+      "label": "SINYAL KESEMPATAN",
+      "framing": "Sinyal peluang yang dicegat dari jaringan kota.",
+      "instruction": "Pecahkan sandi sinyal ini untuk mengetahui instruksinya."
+    },
+    "communityChest": {
+      "label": "ARSIP KOTA",
+      "framing": "Catatan resmi dari arsip publik Cryptonia.",
+      "instruction": "Dekripsi catatan arsip ini untuk mengetahui instruksinya."
+    }
+  },
+  "jail": {
+    "title": "Pusat Detensi Cryptonia",
+    "visiting": "Anda hanya mengunjungi pusat detensi. Tidak ada tindakan tambahan.",
+    "detained": "Token Anda ditahan di pusat detensi Cryptonia. Aturan penjara tetap mengikuti profil edisi.",
+    "entry": "Token dipindahkan ke Pusat Detensi Cryptonia."
+  },
+  "bankruptcy": {
+    "title": "Kewajiban Tidak Terpenuhi",
+    "text": "Investor ini tidak mampu memenuhi kewajiban finansialnya. Aset diselesaikan menurut aturan profil edisi; tidak ada penalti cerita tambahan.",
+    "settled": "Aset telah diselesaikan dan investor keluar dari permainan."
+  },
+  "winner": {
+    "title": "Investor Terakhir di Cryptonia",
+    "text": "Selamat. Anda bertahan sebagai investor terakhir yang masih mampu memenuhi kewajiban dan menjadi pemegang aset utama Cryptonia.",
+    "neutral": "Permainan berakhir. Pemenang ditentukan sepenuhnya oleh mesin Monopoli, bukan oleh cerita.",
+    "playAgain": "Main Lagi",
+    "backToMenu": "Kembali ke Menu"
+  },
+  "flavor": {
+    "purchase": [
+      "Kepemilikan wilayah dicatat di ledger kota.",
+      "Sertifikat aset baru telah dimasukkan ke arsip Cryptonia."
+    ],
+    "payment": [
+      "Ledger kota mencatat perpindahan dana.",
+      "Transaksi diteruskan ke bank pusat Cryptonia."
+    ],
+    "goSalary": [
+      "Gerbang Kota membuka jalur pendanaan.",
+      "Dana operasional investor ditambahkan oleh kota."
+    ],
+    "auction": [
+      "Lelang wilayah dibuka untuk investor lain.",
+      "Arsip kota membuka penawaran terbatas."
+    ],
+    "jail": [
+      "Sistem keamanan Cryptonia mengunci token di pusat detensi.",
+      "Arsip keamanan mencatat penahanan sementara."
+    ],
+    "build": [
+      "Izin pembangunan dicatat oleh arsip kota.",
+      "Menara dan fasilitas baru muncul di cakrawala Cryptonia."
+    ]
+  }
+}
